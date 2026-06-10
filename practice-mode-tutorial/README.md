@@ -1,7 +1,7 @@
-# practice-mode-tutorial
+# practice-mode-tutorial — Intermediate
 
-![Status](https://img.shields.io/badge/Status-In_Progress-blue)
-![Level](https://img.shields.io/badge/Level-Basic_Complete-green)
+![Status](https://img.shields.io/badge/Status-Complete-green)
+![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 
 **Platform:** Mode Analytics (now part of ThoughtSpot) | [mode.com/sql-tutorial](https://mode.com/sql-tutorial)  
 **Repo:** sql-analytics | Month 1 — SQL Mastery
@@ -10,15 +10,15 @@
 
 ## Skills demonstrated
 
-`SELECT` | `WHERE` | `LIMIT` | `ORDER BY` | `GROUP BY` | `AND / OR / NOT` | `BETWEEN` | `IN` | `LIKE / ILIKE` | `IS NULL` | `Comparison Operators` | `Arithmetic on columns` | `Column aliasing`
+`COUNT` | `SUM` | `MIN` | `MAX` | `AVG` | `HAVING` | `INNER JOIN` | `LEFT JOIN` | `RIGHT JOIN` | `FULL OUTER JOIN` | `Self Join` | `UNION / UNION ALL` | `WHERE vs ON` | `Multi-key joins` | `Join with comparison operators` | `DISTINCT` | `COUNT(DISTINCT)` | `CASE` | `Conditional aggregation`
 
 ---
 
 ## What this folder contains
 
-Structured notes from completing the Mode SQL Tutorial Basic section (15 lessons). Each file maps to a topic group and contains: the syntax pattern, queries run against Mode's live datasets, what each query returns, and when to apply each technique.
+Structured reference notes covering all 20 lessons in the Mode SQL Tutorial Intermediate section. Topics are grouped into three files by concept cluster. Each file contains: syntax patterns, annotated queries against Mode's datasets, behavioural rules, and when-to-use guidance.
 
-These notes demonstrate the ability to filter, sort, and aggregate data from unfamiliar schemas — the core skill tested in first-round analytics technical screens.
+These notes demonstrate the ability to combine data across multiple tables, aggregate and filter grouped results, and apply conditional logic inline — the core skills tested in AU/NZ analytics take-home assessments.
 
 ---
 
@@ -26,23 +26,24 @@ These notes demonstrate the ability to filter, sort, and aggregate data from unf
 
 | File | Topics covered |
 |---|---|
-| `select_basics_notes.md` | SELECT, column aliasing, LIMIT, WHERE introduction |
-| `filtering_operators_notes.md` | Comparison operators, BETWEEN, IN, LIKE/ILIKE, IS NULL, arithmetic columns |
-| `logical_operators_notes.md` | AND, OR, NOT, operator precedence, ORDER BY, GROUP BY, SQL comments |
+| `aggregate_functions_notes.md` | COUNT, SUM, MIN, MAX, AVG, HAVING, COUNT(DISTINCT) |
+| `joins_notes.md` | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, Self Join, UNION/UNION ALL, WHERE vs ON, multi-key joins, joins with comparison operators |
+| `distinct_and_case_notes.md` | DISTINCT, COUNT(DISTINCT), CASE bucketing, conditional aggregation, CASE in ORDER BY |
 
 ---
 
 ## Datasets used
 
-- `tutorial.us_housing_units` — US regional housing construction data (Mode built-in)
-- `tutorial.billboard_top_100_year_end` — Billboard year-end top 100 charts (Mode built-in)
 - `tutorial.aapl_historical_stock_price` — Apple historical stock price data (Mode built-in)
+- `tutorial.billboard_top_100_year_end` — Billboard year-end top 100 charts (Mode built-in)
+- `tutorial.crunchbase_companies` — Startup company records (Mode built-in)
+- `tutorial.crunchbase_investments` — Startup investment records (Mode built-in)
 
 ---
 
 ## Progress
 
 - [x] Basic SQL — 15 lessons complete
-- [ ] Intermediate SQL — 20 lessons
+- [x] Intermediate SQL — 20 lessons complete
 - [ ] SQL Analytics Training — 8 lessons
 - [ ] Advanced SQL — 9 lessons
